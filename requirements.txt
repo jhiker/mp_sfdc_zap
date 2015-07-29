@@ -1,0 +1,5 @@
+coverage==3.7.1
+mock==1.0.1
+requests==2.6.0
+simple-salesforce==0.67.0
+validate-email==1.3

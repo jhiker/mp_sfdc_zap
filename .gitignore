@@ -1,0 +1,6 @@
+venv
+resources/secret/*
+*.pyc
+htmlcov
+.coverage
+log
