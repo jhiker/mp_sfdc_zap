@@ -1,10 +1,10 @@
 #! /usr/bin/env python
 #
-# Novarica, Inc.  http://www.novaica.com
+# 
 # Author: Jon Leslie 2015
 # Api Client for Mixpanel/Salesforce integration 
 #
-# Copyright 2015 Novarica, Inc
+# 
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -48,7 +48,7 @@ class SalesforceApi(Salesforce):
 
 
     def get_sf_task_subject(self, event_name, properties):
-        replace_quotes = lambda x: x.replace('&#8217;', "'").replace('&#8220;', "'").replace('&#8221;', "'")
+        replace_quotes = lambda x: x.replace('&#8217;', "'")
         try:
             subject =  event_name + ": " +  " - ".join([replace_quotes(properties[d]) for d in self.subject_components])
         except KeyError:
